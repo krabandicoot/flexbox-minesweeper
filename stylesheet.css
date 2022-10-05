@@ -1,15 +1,58 @@
+/* Overall styling */
+
 @font-face {
     font-family: Minecraft;
     src: url('../flexbox-minesweeper/Ressources/MinecraftTen-VGORe.ttf');
 }
 div{
     font-family: Minecraft, sans-serif;
+    justify-content: center;
+    align-items: center;
 }
-img{
-    width: 20px;
-    height: auto;
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* Box alignment and borders */
+
+.flexbox_container{
+    width: 560px;
+    height: 560px;
+    justify-content: center;
+    border: 15px ridge rgb(235, 235, 235); 
 }
 .flexbox_row{
-    display: flex;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+/* Inside visual */
+
+.flexbox_number_1{
+    color: #0E2FFF;
+}
+.flexbox_number_2{
+    color: #008F01;
+}
+.flexbox_number_3{
+    color: #FE2900;
+}
+img{
+    width: 65px;
+}
+.flexbox_number_1, .flexbox_number_2, .flexbox_number_3, .flexbox_blankspace, .flexbox_bomb {
+    min-width: 68px;
+    min-height: 68px;
+    border: 1px dashed black;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #CBCBCB;
+}
+/* Hidden tiles */
+
